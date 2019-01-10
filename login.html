@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Signup</title>
+    <title>Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -34,8 +34,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"
+        integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                             <a href="signup.html" class="nav-link active">Start Selling</a>
                         </li>
                         <li class="nav-item">
-                            <a href="login.html" class="nav-link active">Login</a>
+                            <a href="login.html" class="nav-link ">Login</a>
                         </li>
                         <li class="nav-item">
                             <a href="shop.html" class="nav-link active">Shop</a>
@@ -204,90 +204,33 @@
         </div>
         <!-- /Fullscreen search area-->
     </header>
-    
-    <!-- Signup -->
+
+    <!-- Login -->
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div>
-                        <ul class="nav nav-pills nav-justified">
-                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-merchant-account">Merchant Account</a></li>
-                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-buyer-account">Buyer Account</a></li>
-                        </ul>
-                        <div class="tab-content my-4">
-                            <div class="tab-pane active" role="tabpanel" id="tab-merchant-account">
-                                <form>
-                                    <h2 class="text-center my-4">Start selling today</h2>
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>First name</label><input class="form-control" type="text" name="firstName" required="" placeholder="First name" id="m-first-name"></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Last name</label><input class="form-control" type="text" name="lastName" required="" placeholder="Last name" id="m-last-name"></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Phone</label><input class="form-control" type="tel" required="" placeholder="Phone" inputmode="tel" id="m-phone"></div>
-                                        </div>
-                                        <div class="col-md-6" id="m-email">
-                                            <div class="form-group"><label>Email address</label><input class="form-control" type="email" placeholder="Email address" inputmode="email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <h4 class="mt-2">Create your first store</h4>
-                                    <hr>
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Store name</label><input class="form-control" type="text" name="storeName" required="" placeholder="Store name" id="store-name"></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Category</label><select class="form-control" required="" id="store-category"><optgroup label="Category"><option value="physical" selected="">Physical</option><option value="digital">Digital</option><option value="services">Services</option></optgroup></select></div>
-                                        </div>
-                                    </div>
-                                    <p class="text-center py-3"><button class="btn btn-primary" type="button">CREATE ACCOUNT</button></p>
-                                    <div class="form-group d-none" id="dialog-confirm-otp">
-                                        <h4 class="mt-2">Confirm your OTP</h4>
-                                        <p>We have sent you an OTP at [phone]. Please verify your OTP to [(Confirm registration)/(login)]</p>
-                                        <div class="form-row">
-                                            <div class="col-8">
-                                                <div class="form-group"><input class="form-control" type="text" placeholder="Your OTP"></div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="form-group"><button class="btn btn-success btn-block" type="button">VERIFY</button></div>
-                                            </div>
-                                        </div>
-                                        <p class="py-2">Didn't get your OTP?&nbsp;<a href="#" id="link-resend-otp">Resend OTP</a></p>
-                                    </div>
-                                </form>
+                <div class="col-md-8 col-lg-6 mx-auto my-5">
+                    <form>
+                        <h2 class="text-center my-4">Login</h2>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="form-group"><input class="form-control" type="tel" name="phone" placeholder="07xxxxxxxx"></div>
                             </div>
-                            <div class="tab-pane" role="tabpanel" id="tab-buyer-account">
-                                <form>
-                                    <h2 class="text-center my-4">Start shopping today</h2>
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>First name</label><input class="form-control" type="text" name="firstName" required="" placeholder="First name" id="m-first-name"></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Last name</label><input class="form-control" type="text" name="lastName" required="" placeholder="Last name" id="m-last-name"></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"><label>Phone</label><input class="form-control" type="tel" required="" placeholder="Phone" inputmode="tel" id="m-phone"></div>
-                                        </div>
-                                        <div class="col-md-6" id="m-email">
-                                            <div class="form-group"><label>Email address</label><input class="form-control" type="email" placeholder="Email address" inputmode="email"></div>
-                                        </div>
-                                    </div>
-                                    <p class="text-center py-3"><button class="btn btn-primary" type="button">CREATE ACCOUNT</button></p>
-                                </form>
+                            <div class="col-12">
+                                <div class="form-group"><input class="form-control" type="text" name="otp" required=""
+                                        placeholder="OTP" id="m-first-name"></div>
                             </div>
                         </div>
-                    </div>
+                        <p class="text-center py-3"><button class="btn btn-primary" type="button">LOGIN</button></p>
+                        <p class="text-center py-2">New user? <a href="signup.html">Signup today</a>. Didn't get your OTP?&nbsp;<a
+                                href="#" id="link-resend-otp">Resend OTP</a></p>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /Signup end -->
-    
+    <!-- /Login end -->
+
     <!-- Footer-->
     <footer class="main-footer">
         <!-- Services block-->
@@ -418,6 +361,7 @@
         // while using file:// protocol
         // pls don't forget to change to your domain :)
         injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');
+
     </script>
     <!-- jQuery-->
     <script src="https://d19m59y37dris4.cloudfront.net/sell/1-2-2/vendor/jquery/jquery.min.js"></script>
@@ -440,6 +384,7 @@
     <script src="js/demo.js"></script>
     <script>
         var basePath = ''
+
     </script>
     <script src="js/theme.js"></script>
 </body>
